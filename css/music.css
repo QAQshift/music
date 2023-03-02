@@ -1,0 +1,339 @@
+/* 采用什么编码解析文件 */
+
+@charset "utf-8";
+body {
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+/* -------------banner begin-------------- */
+
+.banner {
+    width: 800px;
+    height: 250px;
+    background: url(../img/banner.jpg) no-repeat;
+    margin-top: 100px;
+    margin-left: 100px;
+    opacity: 0.8;
+    box-shadow: 10px 10px 10px 0px rgb(81, 196, 241);
+    /* 让子元素相对其定位 */
+    position: relative;
+    float: left;
+}
+
+
+/* 设置横幅样式 */
+
+.banner ul li {
+    list-style: none;
+    display: inline-block;
+    /* 相对父元素绝对定位 */
+    position: absolute;
+}
+
+
+/* 操作图片 */
+
+.banner ul li img {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* 使用类选择器改变图片位置 */
+
+.m1 {
+    top: 50px;
+    left: 100px;
+}
+
+.m2 {
+    top: 120px;
+    left: 170px;
+}
+
+.m3 {
+    top: 60px;
+    left: 300px;
+}
+
+.m4 {
+    top: 30px;
+    left: 500px;
+}
+
+.m5 {
+    top: 120px;
+    left: 600px;
+}
+
+.m6 {
+    top: 50px;
+    left: 680px;
+}
+
+
+/*  图片旋转功能  */
+
+@keyframes rotate_img {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.banner .rotate_img {
+    animation: rotate_img 2s infinite linear;
+}
+
+
+/* -------------banner end-------------- */
+
+
+/*  -----------time begin-------------  */
+
+.time {
+    font-family: '自己字体';
+    float: left;
+    font-size: 80px;
+    color: rgb(81, 166, 245);
+    margin-top: 150px;
+    margin-left: 300px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgb(162, 212, 231);
+    opacity: 0.6;
+}
+
+
+/*  -----------time end-------------  */
+
+
+/*  ----------------title begin--------------*/
+
+.title {
+    font-family: '自己字体', '华文琥珀';
+    float: left;
+    font-size: 120px;
+    font-style: italic;
+    color: rgb(41, 190, 236);
+    margin-left: 800px;
+    margin-top: 200px;
+    text-shadow: 10px 10px 4px rgb(162, 212, 231);
+    opacity: 0.6;
+    letter-spacing: 40px;
+}
+
+
+/*  ----------------title end--------------*/
+
+@font-face {
+    font-family: '自己字体';
+    src: url('../font/Le\ Havre\ Rounded\ W05\ Black\ It.ttf');
+}
+
+
+/* -------------play begin-------------- */
+
+
+/* 修改播放器样式 */
+
+.music {
+    width: 700px;
+    height: 100x;
+    background-color: rgb(91, 177, 216);
+    opacity: 0.8;
+    position: fixed;
+    left: 0px;
+    bottom: 50px;
+    box-shadow: 15px 10px 5px 0px rgb(160, 211, 233);
+}
+
+
+/* 调整音乐和图片的位置 */
+
+.music .m_img {
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+
+
+/* 修改音乐和文本的距离 */
+
+.music .m_txt {
+    color: rgb(64, 92, 250);
+    float: left;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+
+/* 固定btn */
+
+.music .m_btn {
+    float: left;
+    position: absolute;
+    left: 400px;
+}
+
+
+/* 按钮 */
+
+.music .m_btn .m_pre {
+    background: url(../img/play1.png);
+    background-position: -4% 60%;
+    margin-top: 34px;
+    margin-left: 10px;
+    width: 36px;
+    height: 36px;
+    float: left;
+    opacity: 0.8;
+}
+
+.music .m_btn .m_next {
+    background: url(../img/play1.png);
+    background-position: -44% 60%;
+    margin-top: 34px;
+    margin-left: 10px;
+    width: 36px;
+    height: 36px;
+    float: left;
+    opacity: 0.8;
+}
+
+.music .m_btn .m_play {
+    background: url(../img/play2.png);
+    background-position: 50% 60%;
+    margin-top: 32px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    opacity: 0.8;
+}
+
+
+/*  暂停样式  */
+
+.music .m_btn .m_pause {
+    background: url(../img/play1.png);
+    background-position: 50% 60%;
+    margin-top: 32px;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    float: left;
+    opacity: 0.8;
+}
+
+
+/*鼠标移至属性*/
+
+.music .m_btn .m_pre:hover {
+    background: url(../img/pre1.png);
+    background-position: -4% 60%;
+}
+
+.music .m_btn .m_next:hover {
+    background: url(../img/next1.png);
+    background-position: 80% 66%;
+}
+
+
+/* 设置最右边图标 */
+
+.music .m_close {
+    background: url(../img/pull1.png);
+    background-position: 66% 56%;
+    width: 28px;
+    height: 100px;
+    float: right;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.music .m_close:hover {
+    background: url(../img/pull2.png);
+    background-position: 20% 44%;
+}
+
+.music .m_open {
+    background: url(../img/play3.png);
+    background-position: 20% 36%;
+    width: 28px;
+    height: 100px;
+    float: right;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.music .m_open:hover {
+    background: url(../img/play4.png);
+    background-position: 16% 40%;
+}
+
+
+/*  声音控制 */
+
+.v_ctrl {
+    float: right;
+    margin-right: 20px;
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+    position: relative;
+    opacity: 0.8;
+}
+
+.v_ctrl span {
+    color: white;
+    font-size: 14px;
+    margin-left: 45px;
+}
+
+.vol {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 50%;
+    right: 55px;
+    margin-top: -2px;
+    border-radius: 10px;
+    background-color: rgb(190, 227, 241);
+}
+
+.vol_color {
+    width: 100%;
+    height: 20px;
+    background-color: #27b2f3;
+    margin-top: -0px;
+    pointer-events: none;
+    border-radius: 10px;
+}
+
+.vol_blok {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    left: 90%;
+    top: 50%;
+    pointer-events: none;
+    margin-top: -10px;
+}
+
+.text {
+    color: #FFFFFF;
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    margin-top: -2px;
+}
+
+
+/* -------------play end-------------- */

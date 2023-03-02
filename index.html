@@ -1,0 +1,103 @@
+<!-- QAQshfit专用模板 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星空音乐</title>
+    <!-- 引入外部css -->
+    <link rel="stylesheet" href="css/music.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <!-- -----------------banner  begin----------------- -->
+    <div class="banner">
+        <ul>
+            <li datasrc="mp3/邓紫棋-光年之外.mp3" title="光年之外-邓紫棋" class="m1">
+                <img src="img/gem1.jpg" alt="" width="65" height="65">
+            </li>
+            <li datasrc="mp3/陈绮贞 - 我喜欢上你时的内心活动.mp3" title="我喜欢上你时的内心活动-陈绮贞" class="m2">
+                <img src="img/lqz1.jpg" alt="" width="90" height="90">
+            </li>
+            <li datasrc="mp3/初音未来 (初音ミク) - 千本桜 (千本樱).mp3" title="千本樱-初音未来" class="m3">
+                <img src="img/cy1.jpg" alt="" width="119" height="119">
+            </li>
+            <li datasrc="mp3/双笙 - 小幸运.mp3" title="小幸运-双笙" class="m4">
+                <img src="img/ss1.jpg" alt="" width="90" height="90">
+            </li>
+            <li datasrc="mp3/米津玄師 - Lemon.mp3" title="Lemon-米津玄师" class="m5">
+                <img src="img/mj1.jpg" alt="" width="65" height="65">
+            </li>
+            <li datasrc="mp3/程响 - 不再联系.mp3" title="不再联系-程响" class="m6">
+                <img src="img/cx1.jpg" alt="" width="60" width="60">
+            </li>
+        </ul>
+
+    </div>
+    <!-- -----------------banner  end----------------- -->
+
+
+
+
+
+
+    <div class="time" id="time"></div>
+
+
+
+
+    <!-- ----------voice begin--------------- -->
+    <div class="v_ctrl">
+        <!--音量控制-->
+        <span>音量控制</span>
+        <div class="vol" id="volJd">
+            <div class="vol_color" id="volColor"></div>
+            <div class="vol_blok" id="volBlok"></div>
+        </div>
+        <!--音量控制 end-->
+
+        <!--音量显示百分比-->
+        <div class="text" id="text">
+            100%
+        </div>
+        <!--音量显示百分比  end-->
+    </div>
+    <!-- ----------voice end--------------- -->
+
+
+
+
+
+    <!-- --------------title----------- -->
+    <div class="title">星空 MUSIC</div>
+
+    <!-- -----------------music  begin----------------- -->
+    <div class="music">
+        <div class="m_img">
+            <img src="img/gem1.jpg" alt="" width="80" height="80">
+        </div>
+        <div class="m_txt">光年之外 - 邓紫棋</div>
+        <div class="m_btn">
+            <a class="m_pre" title="上一首" href="#"></a>
+            <a class="m_play" title="播放" href="#"></a>
+            <a class="m_next" title="下一首" href="#"></a>
+        </div>
+        <div class="m_close" id="m_close"></div>
+        <audio src="mp3/邓紫棋-光年之外.mp3" class="m_mp3" id="mp3"></audio>
+    </div>
+
+
+    <!-- -----------------music  end----------------- -->
+
+</body>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/music.js" type="text/javascript"></script>
+<script>
+</script>
+
+</html>
